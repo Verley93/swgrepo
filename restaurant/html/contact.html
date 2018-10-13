@@ -2,60 +2,62 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/main.css">
         <title>Impasta - Contact</title>
     </head>
     <body>
         <h1>Impasta</h1>
         <hr>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <nav>
+            <p><a href="index.html">Home</a></p>
+            <p><a href="menu.html">Menu</a></p>
+            <p><a href="contact.html">Contact</a></p>
+            <div class="clear-float"></div>
+        </nav>
         <hr>
         <form action="submit.html" method="POST">
-            <ul>
-                <li>Name:</li>
-                <li><input type="text" name="name"></li>
-            </ul>
-            <ul>
-                <li>Email:</li>
-                <li><input type="text" name="email"></li>
-            </ul>
-            <ul>
-                <li>Phone:</li>
-                <li><input type="text" name="phone"></li>
-            </ul>
-            <ul>
-                <li>Reason for Inquiry:</li>
-                <li>
-                    <select name="">
-                        <option value="catering" default>Catering</option>
-                        <option value="privateParty">Private Party</option>
-                        <option value="feedback">Feedback</option>
-                        <option value="Other">Other</option>
-                    </select>
-                </li>
-            </ul>
-            <ul>
-                <li>Have you been to the restaurant?</li>
-                <li><input type="radio" name="answer" value="no" checked>No</li>
-                <li><input type="radio" name="answer" value="yes">Yes</li>
-            </ul>
-            <ul>
-                <li>Best days to contact you:</li>
-                <li><input type="checkbox" name="weekdays" value="monday">M</li>
-                <li><input type="checkbox" name="weekdays" value="tuesday">T</li>
-                <li><input type="checkbox" name="weekdays" value="wednesday">W</li>
-                <li><input type="checkbox" name="weekdays" value="thursday">Th</li>
-                <li><input type="checkbox" name="weekdays" value="friday">F</li>
-            </ul>
-            <ul>
-                <li><button type="submit" name="button">Send Request</button></li>
-            </ul>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" name="name">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" name="email">
+            </div>
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="text" name="phone">
+            </div>
+            <div>
+                <label for="reason">Reason for Inquiry:</label>
+                <select name="reason">
+                    <option value="catering" default>Catering</option>
+                    <option value="privateParty">Private Party</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div>
+                <label for="answer">Have you been to the restaurant?</label>
+                <input type="radio" name="answer" value="no" checked>No
+                <input type="radio" name="answer" value="yes">Yes
+            </div>
+            <div>
+                <label for="weekdays">Best days to contact you:</label>
+                <input type="checkbox" name="weekdays" value="monday">M
+                <input type="checkbox" name="weekdays" value="tuesday">T
+                <input type="checkbox" name="weekdays" value="wednesday">W
+                <input type="checkbox" name="weekdays" value="thursday">Th
+                <input type="checkbox" name="weekdays" value="friday">F
+            </div>
+            <div>
+                <button type="submit" name="button">Send Request</button>
+            </div>
         </form>
-        <hr>
-        <p>Anywherein, MN, 55555</p>
-        <p>(651) 555-6565</p>
     </body>
+    <footer>
+        <hr>
+        <p>Anywherein, MN 55555</p>
+        <p>(651) 555-6565</p>
+    </footer>
 </html>
