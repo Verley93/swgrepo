@@ -2,11 +2,16 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/restaurantStyles.css">
+        <style>
+            .required {
+                font-weight: bold;
+            }
+        </style>
         <title>Impasta - Contact</title>
     </head>
     <body>
-        <h1>Impasta</h1>
+        <h1 class="restaurant-title">Impasta</h1>
         <hr>
         <nav>
             <p><a href="index.html">Home</a></p>
@@ -15,49 +20,51 @@
             <div class="clear-float"></div>
         </nav>
         <hr>
-        <form action="submit.html" method="POST">
-            <div>
-                <label for="name">Name:</label>
-                <input type="text" name="name">
-            </div>
-            <div>
-                <label for="email">Email:</label>
-                <input type="text" name="email">
-            </div>
-            <div>
-                <label for="phone">Phone:</label>
-                <input type="text" name="phone">
-            </div>
-            <div>
-                <label for="reason">Reason for Inquiry:</label>
-                <select name="reason">
-                    <option value="catering" default>Catering</option>
-                    <option value="privateParty">Private Party</option>
-                    <option value="feedback">Feedback</option>
-                    <option value="Other">Other</option>
-                </select>
-            </div>
-            <div>
-                <label for="answer">Have you been to the restaurant?</label>
-                <input type="radio" name="answer" value="no" checked>No
-                <input type="radio" name="answer" value="yes">Yes
-            </div>
-            <div>
-                <label for="weekdays">Best days to contact you:</label>
-                <input type="checkbox" name="weekdays" value="monday">M
-                <input type="checkbox" name="weekdays" value="tuesday">T
-                <input type="checkbox" name="weekdays" value="wednesday">W
-                <input type="checkbox" name="weekdays" value="thursday">Th
-                <input type="checkbox" name="weekdays" value="friday">F
-            </div>
-            <div>
-                <button type="submit" name="button">Send Request</button>
-            </div>
-        </form>
+        <div class="margin">
+            <form action="submit.html" method="POST">
+                <div>
+                    <label class="required" for="name">Name:</label>
+                    <input type="name" name="name" placeholder="Johnnie Doe" required>
+                </div>
+                <div>
+                    <label class="required" for="email">Email:</label>
+                    <input type="email" name="email" placeholder="j.doe@domain.com" required>
+                </div>
+                <div>
+                    <label class="required" for="phone">Phone:</label>
+                    <input type="text" name="phone" placeholder="555-666-7777" required>
+                </div>
+                <div>
+                    <label for="reason">Reason for Inquiry:</label>
+                    <select name="reason">
+                        <option value="catering" default>Catering</option>
+                        <option value="privateParty">Private Party</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="answer">Have you been to the restaurant?</label>
+                    <input type="radio" name="answer" value="no" checked>No
+                    <input type="radio" name="answer" value="yes">Yes
+                </div>
+                <div>
+                    <label for="weekdays">Best days to contact you:</label>
+                    <input type="checkbox" name="weekdays" value="monday">M
+                    <input type="checkbox" name="weekdays" value="tuesday">T
+                    <input type="checkbox" name="weekdays" value="wednesday">W
+                    <input type="checkbox" name="weekdays" value="thursday">Th
+                    <input type="checkbox" name="weekdays" value="friday">F
+                </div>
+                <div>
+                    <button type="submit" name="button">Send Request</button>
+                </div>
+            </form>
+        </div>
     </body>
     <footer>
         <hr>
-        <p>Anywherein, MN 55555</p>
+        <p>Somewherein, MN 55555</p>
         <p>(651) 555-6565</p>
     </footer>
 </html>
