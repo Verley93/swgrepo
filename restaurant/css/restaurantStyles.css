@@ -4,7 +4,10 @@
 html {
     font-family: roboto;
     font-weight: 200;
-    color: rgb(95, 64, 69);
+}
+
+body {
+    padding-bottom: -100px;
 }
 
 hr {
@@ -13,54 +16,7 @@ hr {
     background-color: rgb(95, 64, 69);
 }
 
-.margin {
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
-nav a {
-    float: left;
-    margin: 8px 12px;
-    font-weight: none;
-}
-
-nav a:link {
-    color: green;
-}
-
-nav a:visited {
-    color: purple;
-}
-
-nav a:hover {
-    font-weight: bold;
-}
-
-nav a:active {
-    color: red;
-    text-decoration: none;
-}
-
-.restaurant-title {
-    text-align: center;
-    font-weight: 300;
-}
-
-.clear-float {
-    clear: both;
-}
-
 footer p {
     text-align: center;
 }
 /* /Global */
-
-/* Index */
-.home-content {
-    background-color: rgb(220,213,194);
-}
-
-.restaurant-description {
-    text-align: justify;:
-}
-/* /Index */

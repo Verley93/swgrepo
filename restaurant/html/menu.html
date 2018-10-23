@@ -1,151 +1,139 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="../css/restaurantStyles.css">
         <style>
-            .content-container {
-                display: flex;
-                justify-content: center;
-            }
-
-            .menu-grid {
-                width: 70%;
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-            }
-
             .menu-item {
-                margin: 0 2%;
+                margin: 0 3%;
                 text-align: center;
                 width: 250px;
                 height: 300px;
-            }
-
-            body {
-                background-color: rgb(220,213,194);
-            }
-
-            table, th, td {
-                border-collapse: collapse;
-            }
-
-            table {
-                width: 40%;
-                text-align: center;
             }
 
             td {
                 padding: 10px 5px;
                 width: 50%
             }
-
-            th {
-                height: 40px;
-            }
-
-            tbody tr:nth-child(odd) {
-                background-color: rgb(201, 183, 147);
-            }
         </style>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/restaurantStyles.css">
         <title>Impasta - Menu</title>
     </head>
     <body>
-        <h1 class="restaurant-title">Impasta</h1>
-        <hr>
-        <nav>
-            <p><a href="index.html">Home</a></p>
-            <p><a href="menu.html">Menu</a></p>
-            <p><a href="contact.html">Contact</a></p>
-            <div class="clear-float"></div>
-        </nav>
-        <hr>
-        <div class="margin content-container">
-            <div class="menu-grid">
-                <div class="menu-item">
-                    <h3>Burger and Fries</h3>
-                    <p>An American Classic!</p>
-                    <p>Your choice - with or without cheese</p>
-                    <p>Pickle, onion, tomato, and lettuce</p>
-                    <p>Served with our famous thick-cut french fries</p>
-                    <p>$7.95</p>
-                </div>
-                <div class="menu-item">
-                    <h3>Hot Dog and Chips</h3>
-                    <p>A Summer Classic!</p>
-                    <p>Your choice - white or wheat bun</p>
-                    <p>Relish, mustard, and ketchup</p>
-                    <p>Served with our house-made chips</p>
-                    <p>$7.95</p>
-                </div>
-                <div class="menu-item">
-                    <h3>Italian Sausage and Peppers</h3>
-                    <p>An All-Time Favorite!</p>
-                    <p>Your choice - mild or spicy cole slaw</p>
-                    <p>Served with garlic mashers</p>
-                    <p>$10.95</p>
-                </div>
-                <div class="menu-item">
-                    <h3>Tenderloin Sandwich and Chips</h3>
-                    <p>Really Hits the Spot!</p>
-                    <p>Plain or sesame seed bun</p>
-                    <p>Pickle, onion, tomato, and lettuce</p>
-                    <p>Served with our house-made chips</p>
-                    <p>$8.95</p>
-                </div>
-                <div class="menu-item">
-                    <h3>House Salad</h3>
-                    <p>On the lighter side</p>
-                    <p>Your choice - with or without cheese</p>
-                    <p>Iceberg lettuce, tomatoes, peppers</p>
-                    <p>Thousand island or ranch dressing</p>
-                    <p>Served with a dinner roll</p>
-                    <p>$6.95</p>
-                </div>
-                <div class="menu-item">
-                    <h3>Brisket Sandwich and Fries</h3>
-                    <p>A taste of Texas!</p>
-                    <p>Smoked brisket on a thick-cut Texas Toast</p>
-                    <p>Cole slaw</p>
-                    <p>Served with our famous thick-cut french fries</p>
-                    <p>$7.95</p>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <h1 class="display-3 text-center mt-3">Impasta</h1>
+                    <ul class="nav nav-tabs mt-5">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <svg xmlns="home.svg" width="20" height="15" viewBox="0 0 8 8">
+                                        <path d="M4 0l-4 3h1v4h2v-2h2v2h2v-4.03l1 .03-4-3z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex flex-wrap justify-content-center my-5">
+                        <div class="menu-item">
+                            <h3>Burger and Fries</h3>
+                            <p>An American Classic!</p>
+                            <p>Your choice - with or without cheese</p>
+                            <p>Pickle, onion, tomato, and lettuce</p>
+                            <p>Served with our famous thick-cut french fries</p>
+                            <p>$7.95</p>
+                        </div>
+                        <div class="menu-item">
+                            <h3>Hot Dog and Chips</h3>
+                            <p>A Summer Classic!</p>
+                            <p>Your choice - white or wheat bun</p>
+                            <p>Relish, mustard, and ketchup</p>
+                            <p>Served with our house-made chips</p>
+                            <p>$7.95</p>
+                        </div>
+                        <div class="menu-item">
+                            <h3>Italian Sausage and Peppers</h3>
+                            <p>An All-Time Favorite!</p>
+                            <p>Your choice - mild or spicy cole slaw</p>
+                            <p>Served with garlic mashers</p>
+                            <p>$10.95</p>
+                        </div>
+                        <div class="menu-item">
+                            <h3>Tenderloin Sandwich and Chips</h3>
+                            <p>Really Hits the Spot!</p>
+                            <p>Plain or sesame seed bun</p>
+                            <p>Pickle, onion, tomato, and lettuce</p>
+                            <p>Served with our house-made chips</p>
+                            <p>$8.95</p>
+                        </div>
+                        <div class="menu-item">
+                            <h3>House Salad</h3>
+                            <p>On the lighter side</p>
+                            <p>Your choice - with or without cheese</p>
+                            <p>Iceberg lettuce, tomatoes, peppers</p>
+                            <p>Thousand island or ranch dressing</p>
+                            <p>Served with a dinner roll</p>
+                            <p>$6.95</p>
+                        </div>
+                        <div class="menu-item">
+                            <h3>Brisket Sandwich and Fries</h3>
+                            <p>A taste of Texas!</p>
+                            <p>Smoked brisket on a thick-cut Texas Toast</p>
+                            <p>Cole slaw</p>
+                            <p>Served with our famous thick-cut french fries</p>
+                            <p>$7.95</p>
+                        </div>
+                    </div>
+
+                    <table class="table table-striped text-center">
+                        <thead>
+                            <tr>
+                                <th colspan="2"><h4>Beverages</h4></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Root Beer</td>
+                                <td>$3.00</td>
+                            </tr>
+                            <tr>
+                                <td>Bottled Water</td>
+                                <td>1.25</td>
+                            </tr>
+                            <tr>
+                                <td>Lemonade</td>
+                                <td>$1.00</td>
+                            </tr>
+                            <tr>
+                                <td>Iced Tea</td>
+                                <td>$1.25</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
-        <div class="content-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="2">Beverages</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Root Beer</td>
-                        <td>$3.00</td>
-                    </tr>
-                    <tr>
-                        <td>Bottled Water</td>
-                        <td>1.25</td>
-                    </tr>
-                    <tr>
-                        <td>Lemonade</td>
-                        <td>$1.00</td>
-                    </tr>
-                    <tr>
-                        <td>Iced Tea</td>
-                        <td>$1.25</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 
-    <footer>
-        <hr>
-        <p>Somewherein, MN 55555</p>
-        <p>(651) 555-6565</p>
+    <footer class="mt-4">
+        <div class="jumbotron jumbotron-fluid bg-white">
+            <div class="container lead">
+                <strong>
+                    <p>Somewherein, MN 55555</p>
+                    <p>(651) 555-6565</p>
+                    <p>Sun - Thurs: 5pm - 10pm; Fri - Sat: 5pm - 11pm</p>
+                </strong>
+            </div>
+        </div>
     </footer>
-
 </html>
